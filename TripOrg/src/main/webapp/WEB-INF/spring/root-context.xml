@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="userDAO" class="com.webToolsProj.TripOrg.DAO.UserDAO"></bean>
+	<bean id="personValidator" class="com.webToolsProj.TripOrg.Controller.PersonValidator"></bean>
+	<bean id="userValidator" class="com.webToolsProj.TripOrg.Controller.UserValidator"></bean>
+	<bean id="hostValidator" class="com.webToolsProj.TripOrg.Controller.HostValidator"></bean>
+	<bean id="loginDAO" class="com.webToolsProj.TripOrg.DAO.LoginDAO"></bean>
+	<bean id="hostDAO" class="com.webToolsProj.TripOrg.DAO.HostDAO"></bean>
+	<bean id="bookingDAO" class="com.webToolsProj.TripOrg.DAO.BookingDAO"></bean>
+	<bean id="advertAptDAO" class="com.webToolsProj.TripOrg.DAO.AdvertisementApartmentDAO"></bean>
+	<bean id="categoryDAO" class="com.webToolsProj.TripOrg.DAO.CategoryDAO"></bean>
+	<bean id="advertAptValidator" class="com.webToolsProj.TripOrg.Controller.AdvertAptValidator"></bean>
+		
+</beans>

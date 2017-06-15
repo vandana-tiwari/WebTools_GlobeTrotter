@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/TripOrg</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
+
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.show_sql">true</property>
+
+		<mapping class="com.webToolsProj.TripOrg.POJO.AdvertisementApartment" />
+		<mapping class="com.webToolsProj.TripOrg.POJO.Email" />
+		<mapping class="com.webToolsProj.TripOrg.POJO.Category" />
+		<mapping class="com.webToolsProj.TripOrg.POJO.Person" />
+		<mapping class="com.webToolsProj.TripOrg.POJO.User" />
+		<mapping class="com.webToolsProj.TripOrg.POJO.Host" />
+		<mapping class="com.webToolsProj.TripOrg.POJO.Address" />
+		<mapping class="com.webToolsProj.TripOrg.POJO.Booking" />
+
+	</session-factory>
+</hibernate-configuration>
